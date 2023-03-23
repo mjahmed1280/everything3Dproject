@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CUBOID</title>
+	<style>
+       	*{
+		margin: 0px;
+		padding: 0px;
+		
+		
+		
+	}
+  body{
+    background-image: url(bgcue.jpg);
+    background-size: 100%;
+  }
+	
+	ul{
+        background-color:#0d012d;
+		padding-bottom: 100%;
+		position: absolute;
+		padding: 30px 30px 0px 20px;
+	    list-style-type: none;
+		/* display: inline-block;0 */
+        height: 100%;
+        margin-top: -360px;
+       
+	}
+  li a{ 
+		    display: block;
+			text-decoration: none;
+			padding: 10px;
+			animation-name: anime;
+		   animation-duration: 6s;
+		   animation-iteration-count: infinite;	
+			
+			
+			}
+
+		li a:hover{
+		 background-color: green;
+		 color:white;
+		 
+		 
+		}
+
+		li{
+			
+		   padding-bottom: 10px;	
+			
+		}
+    #box{
+  background-color: #03011d;
+  opacity: 0.7;
+  width: 54vw;
+  height: 50vh;
+  position: absolute;
+  left:40vw;
+  top: 20px;
+  margin-top: 40px;
+
+}
+
+#box0{
+  background-color: #03011d;
+  opacity: 0.7;
+  width: 54vw;
+  height: 55vh;
+  position: relative;
+  left:40vw;
+  top: 20px;
+  margin-top: 40px;
+
+}
+
+
+
+
+
+
+	
+    .container {
+  perspective: 800px;
+  /* adjust the perspective to change the depth of the 3D effect */
+  margin-left: 20%;
+  margin-top: 10%;
+}
+ 
+
+.cube {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  transform-style: preserve-3d;
+  animation: spin 4s infinite linear;
+  /* adjust the animation duration and timing function as desired */
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  background-color: rgba(248, 11, 177, 0.8);
+  border: 2px solid #000;
+  text-align: center;
+  line-height: 100px;
+  font-size: 2em;
+}
+
+.front {
+  transform: translateZ(100px);
+  background-color: rgba(14, 134, 198, 0.8);
+  
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: rgba(1, 190, 14, 0.8);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(-90deg) translateZ(100px);
+  height: 200px;
+}
+
+.bottom {
+  transform: rotateX(90deg) translateZ(100px);
+  height: 200px;
+
+}
+
+@keyframes spin {
+  10% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateX(-170deg);
+    /* transform: rotateZ(-360deg); */
+  }
+  /* 30% {
+    transform: rotateZ(160deg); */
+  /* } */
+  80% {
+    transform: rotateZ(160deg); 
+  }
+}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+        <div class="cube">
+          <div class="side front">00011</div>
+          <div class="side back">11011</div>
+          <div class="side left">100010</div>
+          <div class="side right">010110</div>
+          <!-- <div class="side top">Adios.</div> -->
+          <div class="side bottom">Blitzcrig</div>
+        </div>
+      </div>/
+
+
+      <ul>
+        <li><a href="login0.html"> LOGIN </a></li>
+    
+        <li><a href="trytable.html">MAIN </a></li>
+
+        <li><a href="table1.html"> SPHERE </a></li>
+		
+		<li><a href="sun0.html"> SUN </a></li>
+    <li><a href="face1.html"> CUBE </a></li>
+    <li><a href="cubeoid.html"> CUBOID </a></li>
+    
+		<!-- <li><a href="face1.html"> FACE.H </a></li> -->
+
+	</ul>
+
+
+
+
+<div id="box" ">
+  <p align="center" style="color: white;padding:20px 50px 20px 50px; font-size: 400%; font-weight: 100;">Cuboids</p>
+    <p style="color: white;padding:20px 50px 20px 50px">a cuboid is a solid shape or a three-dimensional shape. A convex polyhedron that is bounded by six rectangular faces with eight vertices and twelve edges is called a cuboid. 
+      A cuboid is also called a rectangular prism. 
+      A cuboid with six square faces is called a cube. An example of a cuboid in real life is a rectangular box. 
+      In Maths, we can observe other shapes which are exactly the same as cuboid, they are rectangular cuboid, rectangular box, right rectangular prism, right cuboid, rectangular parallelepiped, and rectangular hexahedron.
+      <br><br>A cuboid has 12 edges, 6 faces, and 8 vertices. 
+  
+      </p>
+</div>
+
+<div id="box0" ">
+  <p align="center" style="color: white;padding:20px 50px 20px 50px; font-size: 300%; font-weight: 100;">Formulas of Cuboid</p>
+    <p style="color: white;padding:20px 50px 20px 50px">The cube formulas helps us to find the surface area, diagonals, and volume of a cube. Here is the list of all cube formulas:
+    <br>
+      LSA (Lateral Surface Area) of cuboid = 4lb <br>
+      TSA (Total Surface Area) of cuboid = 2(lb + bh + lh) <br>
+      Volume of cuboid = lbh (or) (√3×d3)/9 <br>
+      Diagonal of face of cuboid = a√2 <br>
+      Main Diagonal of cube = a√3 <br>
+      In all these formulas, 'a' represents the length of each edge and 'd' represents the main diagonal of the cube. Let us discuss the different formulas of a cube in detail.  </p>
+</div>
+
+
+      
+</body>
+</html>

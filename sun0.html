@@ -1,0 +1,190 @@
+<div class="sun"></div>
+<div class="planet"></div>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D Shape</title>
+	<style>
+*{
+		margin: 0px;
+		padding: 0px;
+		
+		
+		
+	}
+  body{
+    background-image: url(bgearth.png);
+    background-size: 100%;
+  }
+	
+	ul{
+        background-color:rgb(4, 24, 4);
+		padding-bottom: 100%;
+		position: absolute;
+		padding: 30px 30px 30px 40px;
+	    list-style-type: none;
+		/* display: inline-block;0 */
+        height: 100%;
+	}
+	
+	@keyframes anime
+	{
+		0%{background-color: #03011d ;}
+		30%{background-color: blueviolet;}
+		60%{background-color: rgb(26, 6, 76);}
+		100%{background-color: rgb(11, 109, 145);}
+	}
+	
+		li a{ 
+		    display: block;
+			text-decoration: none;
+			padding: 10px;
+			animation-name: anime;
+		   animation-duration: 6s;
+		   animation-iteration-count: infinite;	
+			
+			
+			}
+
+		li a:hover{
+		 background-color: green;
+		 color:white;
+		 
+		 
+		}
+
+		li{
+			
+		   padding-bottom: 10px;	
+			
+		}
+
+    #box0{
+  background-color: #03011d;
+  opacity: 0.7;
+  width: 54vw;
+  height: 70vh;
+  position: relative;
+  left:40vw;
+  top: 20px;
+  margin-top: 40px;
+  padding-right: 50px;
+
+}
+	
+    .container {
+  perspective: 800px;
+  /* adjust the perspective to change the depth of the 3D effect */
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(245, 159, 12);
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 16%;
+  margin-left: -50px;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.planet {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  margin-left: -10px;
+  margin-top: -10px;
+  animation: orbit 3s linear infinite;
+}
+
+@keyframes orbit {
+  from {transform: rotate(0deg) translateX(100px) rotate(0deg);}
+  to {transform: rotate(360deg) translateX(100px) rotate(-360deg);}
+  
+}
+
+
+
+#box
+{
+  background-color: #03011d;
+  opacity: 0.7;
+  width: 54vw;
+  height: 75vh;
+  position: relative;
+  left:40vw;
+  top: 20px;
+  padding-right: 50px;
+
+}
+
+
+	</style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="login0.html"> LOGIN </a></li>
+    <li><a href="trytable.html"> HOME </a></li>
+    <li><a href="spere0.html"> SPHERE  </a></li>
+
+<li><a href="sun0.html"> SUN </a></li>
+<li><a href="face1.html"> CUBE </a></li>
+<li><a href="cubeoid.html"> CUBOID </a></li>
+</ul>
+
+<div id="esun">
+    <div class="sun"></div>
+    <div class="planet"></div>
+    <div id="box" ">
+      <p align="center" style="color: white;padding:20px 50px 20px 10px; font-size: 400%; font-weight: 100;">Revolution of earth</p>
+        <p style="color: white;padding:20px 50px 20px 30px">The movement of the Earth around the Sun in a fixed path is called a revolution. 
+          The Earth revolves from west to east, i.e., in the anticlockwise direction. 
+          The one revolution of the Earth around the Sun takes around one year or precisely 365.242 days. 
+          The revolution speed of the earth is 30 km/s-1. </p>
+        
+    
+          <p align="center" style="color: white;padding:20px 50px 20px 50px; font-size: 200%; font-weight: 100;">Importance of Revolution </p>
+          <p style="color: white;padding:20px 50px 20px 30px">
+      Revolution causes seasons.<br>
+      Revolution creates perihelion and aphelion. Perihelion occurs when the Earth is closest to the Sun. Aphelion occurs when the Earth is far from the Sun.<br>
+      Revolution has a direct influence on the varied length of day and night time. The duration of days and nights are the same at the equator. This is known as the equinox. 
+      The duration of days and nights vary in the Northern and 
+      Southern hemispheres. This is known as solstices.
+          </p>
+    </p>
+        </p>
+    </div>
+  </div>  
+  
+  <div id="box0" >
+    <p  style="color: white;padding:20px 50px 20px 50px; font-size: 300%; font-weight: 100;"> Rotation of the Earth</p>
+      <p style="color: white; align:center">
+      
+      Earth rotates on its axis from west to east,
+       and the Sun and the Moon appear to move from east to west across the sky. The spinning of the Earth around its axis is called rotation.
+        The axis has an angle of 23 1/2º and is perpendicular to the plane of Earth’s orbit. This means the Earth is tilted on its axis, and because of this tilt, the northern and southern 
+        hemispheres lean in a direction away from the Sun.<br>
+         The rotation of the Earth divides it into a lit-up half and a dark half, which gives rise to day and night. The direction of the Earth’s rotation depends on the direction of viewing. 
+         When viewed looking down from the North Pole, Earth spins counterclockwise. On the contrary, when viewed looking down from the south pole,
+       the earth spins in the clockwise direction.
+        </p>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

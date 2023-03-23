@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>LOGIN</title> 
+    <style>
+      body{
+        margin-top: 0px;
+        margin-left: 0px;
+        background-image: url(bglogin.jpg);
+        background-size: 100%;
+      }
+      #d1
+          {
+          position: relative;
+          left:30vw;;
+          align: center;
+          background-color: rgb(6, 6, 55);
+          height: 388;
+          width: 691;
+          opacity: 0.8;
+          border: solid;
+          border-radius: 20px;
+          top: 15vh;
+          }
+
+ul{
+	background-color:rgb(20, 1, 77);
+	padding-bottom: 100%;
+	
+	position: absolute;
+	padding: 30px 30px 30px 40px;
+	list-style-type: none;
+	/* display: inline-block;0 */
+	height: 100%;
+  margin-top: 0px;
+}
+
+@keyframes anime
+{
+	0%{background-color: #03011d ;}
+	30%{background-color: blueviolet;}
+	60%{background-color: rgb(26, 6, 76);}
+	100%{background-color: rgb(11, 109, 145);}
+}
+
+	li a{ 
+		display: block;
+		text-decoration: none;
+		padding: 10px;
+		animation-name: anime;
+	   animation-duration: 6s;
+	   animation-iteration-count: infinite;	
+		
+		
+		}
+
+	li a:hover{
+	 background-color: green;
+	 color:white;
+	 
+	 
+	}
+
+	li{
+		
+	   padding-bottom: 10px;	
+		
+	}
+
+	
+
+
+</style>
+    </head>
+
+    <body >
+
+      <ul>
+        <!-- <li><a href="trytable.html"> HOME </a></li> -->
+        <li><a href="login0.html"> LOGIN </a></li>
+        <li><a href="trytable.html"> HOME </a></li>
+        <li><a href="table1.html"> SPHERE</a></li>
+		<li><a href="sun0.html"> SUN </a></li>
+		<li><a href="face1.html"> CUBE </a></li>
+		<li><a href="cubeoid.html"> CUBOID </a></li>
+
+	</ul>
+
+
+        <form>
+	<div id="d1" align="center" >
+	<H1 ><b>LOG IN</b></h1>
+	<pre>
+
+        Name     :    <input type="text" name="textfield" size="30"  value="text"></input><br>
+        PH no    :    <input type="text" name="textfield" size="30"  value="text"></input><br>
+        Email id :    <input type="text" name="textfield" size="30"  value="text"></input><br>
+        Linked in:    <input type="text" name="textfield" size="30"  value="text"></input><br>
+        Address  :    <input type="text" name=textfield    value="text" size="30"></input><br>   	 	
+ 	</pre>
+
+GENDER:<input type="radio" name="radiobutton" value="val1">Male<input type="radio" name="radiobutton" value="val1">Female
+ <!-- <select name="select"><option value="red"><>ption value="red"><option value="red"><br><br><br> -->
+<input type="submit" name="submit" value="submit">
+  <input type="RESET" NAME="RESET" value="reset">		
+ 	
+</div>
+  </form>
+    </body>
+</html>
